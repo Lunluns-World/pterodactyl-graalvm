@@ -8,6 +8,9 @@ on:
 
 jobs:
   pterodactyl-graalvm:
+    permissions:
+      contents: read
+      packages: write
     name: "pterodactyl-graalvm:${{ matrix.tag }}"
     runs-on: ubuntu-latest
     strategy:
